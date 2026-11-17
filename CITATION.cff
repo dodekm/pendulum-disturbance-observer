@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the versioned release when using these data or code."
+title: "Experimental data and MATLAB code for Nonlinear Disturbance Observers: An Input–Output Approach"
+type: dataset
+authors:
+  - family-names: Dodek
+    given-names: Martin
+    orcid: "https://orcid.org/0000-0002-4118-4673"
+  - family-names: Halás
+    given-names: Miroslav
+version: "1.0.0"
+date-released: "2026-11-17"
+repository-code: "https://github.com/dodekm/pendulum-disturbance-observer"
+url: "https://github.com/dodekm/pendulum-disturbance-observer/releases/tag/v1.0.0"
+keywords:
+  - disturbance observer
+  - nonlinear control
+  - pendulum
+  - experimental data
+  - MATLAB

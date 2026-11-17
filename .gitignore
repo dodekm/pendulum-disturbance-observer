@@ -1,0 +1,5 @@
+/analysis_results/reproduced_revision_*/
+*.asv
+*.autosave
+.DS_Store
+Thumbs.db

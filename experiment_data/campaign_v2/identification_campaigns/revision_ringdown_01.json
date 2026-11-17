@@ -1,0 +1,22 @@
+{
+  "schema_version": "pendulumlab.ringdown_launcher/1",
+  "config_sha256": "c33b64e38e938c69c498032bbcbc7cfa72f8f9acf1a70807fa135eb44f5f7608",
+  "manifest_path": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_d502699070964dadac24642c905eda82\\campaign_manifest.json",
+  "manifest_sha256": "f55132f54956fd44881084d268cf68e6dada0f7d38aa6d7a1fafe738d6874d0f",
+  "settings": {
+    "campaign_label": "revision_ringdown_01",
+    "operator_id": "Martin Dodek",
+    "session_id": "revision_id_session_01",
+    "command": 25,
+    "baseline_s": 5,
+    "rise_s": 15,
+    "hold_s": 10,
+    "release_s": 1.25,
+    "duration_s": 120,
+    "planned_slew": 20,
+    "runtime_slew": 40,
+    "recovery_s": 20,
+    "max_abs_angle_deg": 180,
+    "COM_port": 4
+  }
+}

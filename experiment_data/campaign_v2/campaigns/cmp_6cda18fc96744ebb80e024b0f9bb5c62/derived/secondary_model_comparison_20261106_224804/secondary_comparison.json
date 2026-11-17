@@ -1,0 +1,361 @@
+{
+  "schema_version": "pendulumlab.secondary_frozen_predictor_comparison/1",
+  "status": "secondary_frozen_predictor_comparison_not_new_validation_criterion",
+  "scope": "Two parameter-frozen predictors from the same pre-holdout fit report, compared on the same three fresh physical records. Not a controller comparison, new prospective criterion, model truth claim, or replacement for the original failed assessment.",
+  "campaign_id": "cmp_6cda18fc96744ebb80e024b0f9bb5c62",
+  "output_folder": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\derived\\secondary_model_comparison_20261106_224804",
+  "source": {
+    "fit_report_mat": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\identification_results\\identification_20261106_163437\\identification.mat",
+    "fit_report_json": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\identification_results\\identification_20261106_163437\\identification.json",
+    "fit_report_mat_sha256": "027ac6d3fd43d6f55fa7044e4ad15421b5bc09c72621cdf7f5515e6444533a13",
+    "fit_report_json_sha256": "fee5ab38e357d11fcf2ee678665fc44883afa132d51d79f13ecd6ffdecd2ad96",
+    "registry_json": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_framework\\model_registry\\calibrated_rig_20261106_173755.json",
+    "registry_json_sha256": "5407ee9ca5284383637f01dd9584d2694374c89a8e952b7a3c67b7993edadd10",
+    "manifest": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\campaign_manifest.json",
+    "manifest_sha256": "58d1ab73de83693534b8443c9c08e6d4f3dc1e76e394d9b2fadb1c397910187b",
+    "original_assessment_mat": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\derived\\assessment_20261106_181317\\validation_assessment.mat",
+    "original_assessment_mat_sha256": "a6bf4682834c8d31f4d22b2a314c473b396b53cb38e7d2435b844407b02b4758",
+    "original_assessment_json": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\derived\\assessment_20261106_181317\\validation_assessment.json",
+    "original_assessment_json_sha256": "002a153fabe022535078c60ec6c6119112e5553fcf42b58596da5052c383410e",
+    "validation_predictor_source": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_framework\\+pendulumlab\\predict_recorded_model.m",
+    "validation_predictor_sha256": "44167360c0ddc5b1950197fe2f8b2d4dc23645269ab143c41c373c1145fab07c",
+    "nominal_simulator_source": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_framework\\+pendulumlab\\simulate_output.m",
+    "nominal_simulator_sha256": "491d101c3ee083300589731d12ccdf32d008b43cf2038426d20d0b769bcfbeca"
+  },
+  "models": {
+    "model1_raw_three_parameter": [
+      46.150245943861655,
+      0.808249014830526,
+      0.62341430960340916,
+      0,
+      0,
+      0
+    ],
+    "model3_static_map_plus_lag": [
+      53.969577903575647,
+      0.34823515651643966,
+      0.0733923204853655,
+      0.63559989905461822,
+      0.21713838276331476,
+      0
+    ],
+    "model3_gamma_ref_derived": 0.73441621550216851,
+    "model3_parameters_source": "same immutable identification_20261106_163437 fit report"
+  },
+  "preprocessing": {
+    "initial_angle": "Measured first sample; fixed, not fitted.",
+    "initial_velocity": "One nuisance v0 fit per model and run using only the first 5 seconds.",
+    "scoring": "Samples strictly after the 5-second prefix; powered subset uses raw u_command > 0.",
+    "substeps": [
+      8,
+      16
+    ],
+    "map_lag_initial_state": "Effective acceleration lag state initialized to zero, matching the original full-rig predictor."
+  },
+  "run_ids": [
+    "run_52660c83a2a5434da6ab50e932005bbd",
+    "run_aad2799a68d74b5d92b5ee5dc919b675",
+    "run_db8d8b607c8b43309e2b722f733679bf"
+  ],
+  "runs": [
+    {
+      "run_id": "run_52660c83a2a5434da6ab50e932005bbd",
+      "raw_file": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\runs\\run_52660c83a2a5434da6ab50e932005bbd.mat",
+      "raw_sha256": "ac524de8fab08ad299d23fe12f38b54cbb2b74ad699376fb590fa7b8d7dd9bb2",
+      "model1": {
+        "scored_samples": 3099,
+        "scored_duration_s": 154.94999999999118,
+        "rmse_deg": 7.1348689122252438,
+        "bias_deg": 0.20545581908009874,
+        "peak_abs_error_deg": 67.937081232059825,
+        "powered_samples": 1304,
+        "powered_duration_s": 65.1999999999963,
+        "powered_rmse_deg": 7.412386507060698,
+        "powered_bias_deg": 0.95857323198091637,
+        "powered_peak_abs_error_deg": 28.208030065532466,
+        "substep_8_vs_16_max_abs_deg": 7.8440451125407576E-6
+      },
+      "model3_map_lag": {
+        "scored_samples": 3099,
+        "scored_duration_s": 154.94999999999118,
+        "rmse_deg": 2.4983644091254953,
+        "bias_deg": 0.22712686486019629,
+        "peak_abs_error_deg": 15.403090828515635,
+        "powered_samples": 1304,
+        "powered_duration_s": 65.1999999999963,
+        "powered_rmse_deg": 2.5700559760037973,
+        "powered_bias_deg": 0.74978039200348412,
+        "powered_peak_abs_error_deg": 7.74100487086469,
+        "substep_8_vs_16_max_abs_deg": 2.4101572920272688E-5
+      },
+      "model3_prediction_max_difference_from_original_rad": 1.9984014443252818E-15,
+      "response_frequency_diagnostic": {
+        "status": "unavailable",
+        "reason": "No declared multisine full-amplitude window."
+      }
+    },
+    {
+      "run_id": "run_aad2799a68d74b5d92b5ee5dc919b675",
+      "raw_file": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\runs\\run_aad2799a68d74b5d92b5ee5dc919b675.mat",
+      "raw_sha256": "149bdb21508c2b330dd2b99d6bece95bc27f758eb9aa5f287a822180b251f07a",
+      "model1": {
+        "scored_samples": 2899,
+        "scored_duration_s": 144.94999999999175,
+        "rmse_deg": 4.3300790845289763,
+        "bias_deg": 0.69326736003249312,
+        "peak_abs_error_deg": 33.200180533985368,
+        "powered_samples": 1979,
+        "powered_duration_s": 98.949999999994375,
+        "powered_rmse_deg": 4.2234454413108322,
+        "powered_bias_deg": 1.1692841813990049,
+        "powered_peak_abs_error_deg": 9.6316941924472683,
+        "substep_8_vs_16_max_abs_deg": 6.5113111921375833E-6
+      },
+      "model3_map_lag": {
+        "scored_samples": 2899,
+        "scored_duration_s": 144.94999999999175,
+        "rmse_deg": 2.0862224467932724,
+        "bias_deg": -0.073627139944530948,
+        "peak_abs_error_deg": 7.8367886652941143,
+        "powered_samples": 1979,
+        "powered_duration_s": 98.949999999994375,
+        "powered_rmse_deg": 2.431324798880516,
+        "powered_bias_deg": -0.045672339858270419,
+        "powered_peak_abs_error_deg": 7.8367886652941143,
+        "substep_8_vs_16_max_abs_deg": 1.4969071587919739E-5
+      },
+      "model3_prediction_max_difference_from_original_rad": 1.5543122344752192E-15,
+      "response_frequency_diagnostic": {
+        "status": "finite_window_response_descriptors",
+        "reason": "",
+        "declared_window_s": [
+          48,
+          96
+        ],
+        "frequencies_hz": [
+          0.25,
+          0.5,
+          0.75,
+          1,
+          1.25,
+          1.5,
+          2
+        ],
+        "window_rule": "Declared full-amplitude window, truncated at its first actual nonpositive command; no prediction-error-based selection.",
+        "actual_powered_samples": 960,
+        "actual_window_s": [
+          48,
+          96
+        ],
+        "duration_s": 48,
+        "cycles_at_lowest_declared_tone": 12,
+        "measured_output_amplitude_deg": [
+          1.0924543787855827,
+          1.3183674187292869,
+          2.2729238706439343,
+          5.360291743541918,
+          0.94699535670892443,
+          0.4846017875710868,
+          0.15401635085663282
+        ],
+        "raw_model_output_amplitude_deg": [
+          0.52661183991681437,
+          0.70755042004150226,
+          1.4470658778136578,
+          2.0159477466697804,
+          0.5487687172733261,
+          0.30203416635842362,
+          0.13144911162045239
+        ],
+        "map_lag_output_amplitude_deg": [
+          0.9364348926511844,
+          0.97668381839641549,
+          1.514795896847295,
+          8.2327813015906486,
+          0.69712580534703872,
+          0.35969999803175051,
+          0.11258754786831356
+        ],
+        "raw_model_minus_measured_phase_wrapped_deg": [
+          17.003350666415731,
+          12.171824706656569,
+          29.707641328822945,
+          16.529732269803354,
+          45.417734844775779,
+          46.706422284031092,
+          66.655060354580385
+        ],
+        "map_lag_minus_measured_phase_wrapped_deg": [
+          -6.0548128505463712,
+          -18.646425056996858,
+          -5.9516487751887555,
+          -20.277301435765938,
+          -25.558744094676015,
+          -16.608839661264831,
+          -55.249766756922192
+        ],
+        "transmitted_input_amplitude_raw_units": [
+          0.46996134946490259,
+          0.46996499903265754,
+          0.46996098590026886,
+          0.46995670701560283,
+          0.46995720091698912,
+          0.46995997750740026,
+          0.469961617407603
+        ],
+        "interpretation": "Mean-removed Hann projections at the declared tones, on an identical actual-input window for both frozen predictions and measurement. Finite-window leakage, transients and weak response components limit interpretation; these are descriptive amplitudes/phases, not a plant FRF, noise estimate, new accuracy gate or actuator-delay measurement."
+      }
+    },
+    {
+      "run_id": "run_db8d8b607c8b43309e2b722f733679bf",
+      "raw_file": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\runs\\run_db8d8b607c8b43309e2b722f733679bf.mat",
+      "raw_sha256": "d525450eca3271153822cfa27271e4f6d3191886ce9bc8bae9a850df24567d43",
+      "model1": {
+        "scored_samples": 2899,
+        "scored_duration_s": 144.94999999999175,
+        "rmse_deg": 7.5415758080137136,
+        "bias_deg": -2.5646199963417162,
+        "peak_abs_error_deg": 44.143977697787307,
+        "powered_samples": 1979,
+        "powered_duration_s": 98.949999999994375,
+        "powered_rmse_deg": 8.0910669626609675,
+        "powered_bias_deg": -3.5466311764058043,
+        "powered_peak_abs_error_deg": 22.600837511567235,
+        "substep_8_vs_16_max_abs_deg": 7.2401692438526328E-6
+      },
+      "model3_map_lag": {
+        "scored_samples": 2899,
+        "scored_duration_s": 144.94999999999175,
+        "rmse_deg": 4.0021168193898218,
+        "bias_deg": 1.2017509827971646,
+        "peak_abs_error_deg": 21.040891996262935,
+        "powered_samples": 1979,
+        "powered_duration_s": 98.949999999994375,
+        "powered_rmse_deg": 4.7364132356292448,
+        "powered_bias_deg": 1.8458192946843559,
+        "powered_peak_abs_error_deg": 21.040891996262935,
+        "substep_8_vs_16_max_abs_deg": 1.7587573076351005E-5
+      },
+      "model3_prediction_max_difference_from_original_rad": 3.9968028886505635E-15,
+      "response_frequency_diagnostic": {
+        "status": "finite_window_response_descriptors",
+        "reason": "",
+        "declared_window_s": [
+          48,
+          96
+        ],
+        "frequencies_hz": [
+          0.25,
+          0.5,
+          0.75,
+          1,
+          1.25,
+          1.5,
+          2
+        ],
+        "window_rule": "Declared full-amplitude window, truncated at its first actual nonpositive command; no prediction-error-based selection.",
+        "actual_powered_samples": 960,
+        "actual_window_s": [
+          48,
+          96
+        ],
+        "duration_s": 48,
+        "cycles_at_lowest_declared_tone": 12,
+        "measured_output_amplitude_deg": [
+          0.90413620378018977,
+          1.5045478915908614,
+          5.8819678434226841,
+          1.3923139823133523,
+          0.48168600552962249,
+          0.23128326096354423,
+          0.0740256534093724
+        ],
+        "raw_model_output_amplitude_deg": [
+          0.44172679849361596,
+          0.57801379875953829,
+          1.5008833201945486,
+          0.93182045780021527,
+          0.33583611419374887,
+          0.18863373272750097,
+          0.084856565807380546
+        ],
+        "map_lag_output_amplitude_deg": [
+          1.1732074451678911,
+          1.3084579764240769,
+          4.4014007635965822,
+          1.1319738071987087,
+          0.44281557766525637,
+          0.24470571153269924,
+          0.070764481631858681
+        ],
+        "raw_model_minus_measured_phase_wrapped_deg": [
+          -6.9445577380801078,
+          16.440475839642264,
+          68.956491577930464,
+          29.512685326474895,
+          63.083139337642571,
+          63.871091748139165,
+          60.637872783110652
+        ],
+        "map_lag_minus_measured_phase_wrapped_deg": [
+          -29.692229808392092,
+          -18.060734750266963,
+          32.839413644448754,
+          -44.156833580030565,
+          3.8058821866458805,
+          -13.956927352559321,
+          -14.397966179131389
+        ],
+        "transmitted_input_amplitude_raw_units": [
+          0.31567616264009629,
+          0.315674940604951,
+          0.31567046219366468,
+          0.31567313912769068,
+          0.31567432904068865,
+          0.31567511601413722,
+          0.31567313856068074
+        ],
+        "interpretation": "Mean-removed Hann projections at the declared tones, on an identical actual-input window for both frozen predictions and measurement. Finite-window leakage, transients and weak response components limit interpretation; these are descriptive amplitudes/phases, not a plant FRF, noise estimate, new accuracy gate or actuator-delay measurement."
+      }
+    }
+  ],
+  "model3_reproduction_of_original_assessment": [
+    {
+      "run_id": "run_52660c83a2a5434da6ab50e932005bbd",
+      "rmse_difference_deg": 3.5527136788005009E-15,
+      "bias_difference_deg": -1.9428902930940239E-16,
+      "peak_difference_deg": 2.6645352591003757E-14,
+      "powered_rmse_difference_deg": -1.7763568394002505E-15,
+      "powered_bias_difference_deg": -6.6613381477509392E-16,
+      "prediction_max_abs_difference_rad": 1.9984014443252818E-15
+    },
+    {
+      "run_id": "run_aad2799a68d74b5d92b5ee5dc919b675",
+      "rmse_difference_deg": -4.4408920985006262E-16,
+      "bias_difference_deg": -9.71445146547012E-17,
+      "peak_difference_deg": -4.4408920985006262E-14,
+      "powered_rmse_difference_deg": -8.8817841970012523E-16,
+      "powered_bias_difference_deg": 0,
+      "prediction_max_abs_difference_rad": 1.5543122344752192E-15
+    },
+    {
+      "run_id": "run_db8d8b607c8b43309e2b722f733679bf",
+      "rmse_difference_deg": 1.5987211554602254E-14,
+      "bias_difference_deg": 8.8817841970012523E-16,
+      "peak_difference_deg": 3.907985046680551E-14,
+      "powered_rmse_difference_deg": 1.7763568394002505E-14,
+      "powered_bias_difference_deg": 1.3322676295501878E-15,
+      "prediction_max_abs_difference_rad": 3.9968028886505635E-15
+    }
+  ],
+  "original_frozen_assessment_passed": false,
+  "criteria_reapplied": false,
+  "created_utc": "2026-11-06T21:48:04Z",
+  "analysis_script": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\compare_frozen_validation_models_secondary.m",
+  "analysis_script_sha256": "489bfce5aa44392696951a9b69567c75df418a8798546140ff0dda59ae61956f",
+  "figure_bases": [
+    "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\derived\\secondary_model_comparison_20261106_224804\\holdout_1",
+    "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\derived\\secondary_model_comparison_20261106_224804\\holdout_2",
+    "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6cda18fc96744ebb80e024b0f9bb5c62\\derived\\secondary_model_comparison_20261106_224804\\holdout_3"
+  ]
+}
