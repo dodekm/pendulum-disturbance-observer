@@ -1,0 +1,67 @@
+{
+  "schema_version": "pendulumlab.static_launcher/1",
+  "config_sha256": "b8dc4784e5169c9e78c8cc2097d79a6b21a4fb517161e91beb1bf5448dd68caf",
+  "manifest_path": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_43389fcd040e4fda9c94eaec579e8bba\\campaign_manifest.json",
+  "manifest_sha256": "3643abc7878e10eea7f3aa81c2ba2a7c9bafe00aaae80dd71232c9962fddf276",
+  "settings": {
+    "campaign_label": "revision_angle_calibration_01",
+    "preceding_campaign_label": "revision_static_02",
+    "operator_id": "Martin Dodek",
+    "session_id": "revision_id_session_01",
+    "waypoints": [
+      [
+        0,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        35,
+        45
+      ],
+      [
+        45,
+        45
+      ],
+      [
+        50,
+        50
+      ],
+      [
+        60,
+        50
+      ],
+      [
+        65,
+        55
+      ],
+      [
+        100,
+        55
+      ],
+      [
+        130,
+        0
+      ],
+      [
+        160,
+        0
+      ]
+    ],
+    "return_policy": {
+      "version": "angle_zero_return_v1",
+      "target_abs_angle_rad": 1.5707963267948966,
+      "active_deadline_s": 100,
+      "required_zero_tail_s": 20,
+      "direct_zero_approved": true
+    },
+    "planned_slew": 2,
+    "runtime_slew": 40,
+    "recovery_s": 20,
+    "max_abs_angle_deg": 180,
+    "COM_port": 4,
+    "tail_window_s": 10
+  }
+}

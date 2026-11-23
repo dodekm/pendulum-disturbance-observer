@@ -1,0 +1,46 @@
+{
+  "run_id": "run_3496faabaaac4fc9994c1da9105c5027",
+  "status": {
+    "code": "interlock",
+    "reason": "Device timestamp gap exceeds configured maximum.",
+    "read_count": 1174,
+    "write_count": 1174,
+    "command_write_count": 1143,
+    "read_attempt_count": 1174,
+    "rest_read_count": 30,
+    "trial_read_count": 1144,
+    "stop_requested": true,
+    "stop_succeeded": true,
+    "stop_semantics": "Successful zero-command write request only; mechanical stopping is not measured.",
+    "link_closed": true,
+    "exception": "pendulumlab:Interlock: Device timestamp gap exceeds configured maximum.",
+    "save_exception": ""
+  },
+  "raw_sha256": "c00f49acb2e11127965bd5aa517ac9b095be4fd887ade9a4a755f8033034f557",
+  "n_saved": 1144,
+  "n_valid": 1144,
+  "n_writes": 1143,
+  "angle_valid_range_deg": [
+    0.17578125,
+    48.69140625
+  ],
+  "last_device_intervals_s": [
+    0.05078125,
+    0.05078125,
+    0.048828125,
+    0.05078125,
+    0.048828125,
+    0.6015625
+  ],
+  "last_host_read_start_intervals_s": [
+    0.050012600000002294,
+    0.049982099999994034,
+    0.05005570000000148,
+    0.050019100000000094,
+    0.049918200000000468,
+    0.68376470000000467
+  ],
+  "maximum_host_interval_s": 0.68376470000000467,
+  "audit_path": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_19a9518f3c3c4ec6bb284a8056259c36\\derived\\control_run_audits\\audit_run_3496faabaaac4fc9994c1da9105c5027_20261106_203250_049.json",
+  "interpretation": "Timing interlock record retained. A gap does not by itself identify its transport, scheduling, or firmware cause. No retry or continuation is performed by this diagnostic."
+}

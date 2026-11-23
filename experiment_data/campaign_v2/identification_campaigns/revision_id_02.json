@@ -1,0 +1,8 @@
+{
+  "schema_version": "pendulumlab.identification_launcher/1",
+  "campaign_label": "revision_id_02",
+  "mode": "hardware",
+  "config_sha256": "7dc9f3e01d651f2da0599b94c4c0c869f01f5c212988c2d994c22b3a71df694e",
+  "manifest_path": "C:\\Drive\\FEI\\PhD\\Dodek-Phd\\Publikacie\\Disturbance_observer\\experiment_data\\campaign_v2\\campaigns\\cmp_6e12ecfa55b448d7bdd42dafc2060794\\campaign_manifest.json",
+  "manifest_sha256": "56423dde2386ec2509eceedeadfedc3cd2ec6f08539f9b8a488bb195ec4b4f62"
+}
